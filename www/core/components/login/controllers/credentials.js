@@ -74,6 +74,10 @@ angular.module('mm.core.login')
         siteChecked = true;
     }
 
+    $scope.signup = function() {
+        $mmUtil.openInBrowser("https://learnstation.ng/login/signup.php");
+    }
+
     $scope.login = function() {
 
         $mmApp.closeKeyboard();
