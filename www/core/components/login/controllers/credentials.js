@@ -75,7 +75,7 @@ angular.module('mm.core.login')
     }
 
     $scope.signup = function() {
-        $mmUtil.openInBrowser("https://learnstation.ng/login/signup.php");
+        $mmUtil.openInBrowser("http://learnstation.ng/login/index.php");
     }
 
     $scope.login = function() {

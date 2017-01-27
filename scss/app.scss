@@ -4,10 +4,18 @@
  * Use it to customise the look and feel of the app.
  */
 
-// Colors.
+ // Colors.
 $positive: #387ef5;
 $stable: #f5f5f5;
 
+.bar-side-menu {
+   background-color: $positive;
+ }
+ 
+ .bar-content {
+   background-color: $positive;
+ }
+ 
 $base-background-color: #fcfcfc;
 $item-default-bg: white;
 $item-divider-bg: #f1f1f1;

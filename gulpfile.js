@@ -6,7 +6,7 @@ var insert = require('gulp-insert');
 var stripComments = require('gulp-strip-comments');
 var removeEmptyLines = require('gulp-remove-empty-lines');
 var clipEmptyFiles = require('gulp-clip-empty-files');
-var sass = require('node-sass');
+var sass = require('gulp-sass');
 var minifyCss = require('gulp-minify-css');
 var rename = require('gulp-rename');
 var tap = require('gulp-tap');
@@ -607,7 +607,7 @@ gulp.task('e2e-build', function() {
   // iOS.
   } else if (argv.target == 'ios') {
     config.seleniumAddress = argv.webdriver;
-    if (argv.ipa.charAt(0) === '/' || argv.ipa.charAt(0) === '\\') {
+    if (argv.ipa.charAt(0) === '/' || argv.ipa.charAt(0) === '\\') {
       config.capabilities.app = argv.ipa;
     } else {
       config.capabilities.app = npmPath.join(__dirname, argv.ipa);
